@@ -1,7 +1,8 @@
 @import url("./reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 
 body{
-  font-family: sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 100%;
@@ -21,8 +22,7 @@ main section {
   justify-content: center;
 }
 main section .clock {
-  background-color: rgb(233, 233, 233);
-  background-image: url('../img/bg_clock.png');
+  background: rgb(233, 233, 233) url('../img/bg_clock.png');
   background-repeat: no-repeat;
   background-size: 98%;
   background-position: center;
@@ -38,19 +38,20 @@ main section .clock {
 }
 main section .clock .date{
   background-color: rgb(240, 240, 240);
-  color: #292929;
-  width: 8.2%;
-  height: 6.5%;
-  font-size: 1.8rem;
+  color: #1f1f1f;
+  width: calc(12% - 0.4rem);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 300%;
+  line-height: 1;
   font-weight: 600;
-  vertical-align: bottom;
-  text-align: left;
+  padding:  0.1rem;
+  text-align: center;
   border-width: .2rem;
   border-style: solid;
   border-color: rgb(17, 17, 17);
   border-radius: .5rem;
   position: absolute;
-  left: calc(45.9% - .2rem);
+  left: calc(44% - 0.1rem);
   bottom: 25%;
   z-index: 0;
 }
