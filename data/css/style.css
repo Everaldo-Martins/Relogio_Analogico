@@ -64,7 +64,7 @@ main section .clock {
     border-radius: 40rem;
     position: relative;
     transform: rotate(-1deg);
-    z-index: -1;
+    z-index: 0;
 }
 
 main section .clock .date {
@@ -81,20 +81,20 @@ main section .clock .date {
     position: absolute;
     right: calc(25% - 0.1rem);
     top: calc(46% - 0.4rem);
-    z-index: 0;
+    z-index: 1;
 }
 
 main section .clock .hour {
     background: url('../img/bg_clock_h.png');
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center 28%;
+    background-position: center 27%;
     width: 3%;
     height: 100%;
     position: absolute;
     left: 48.8%;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 main section .clock .min {
@@ -107,7 +107,7 @@ main section .clock .min {
     position: absolute;
     left: 48.8%;
     top: 0;
-    z-index: 2;
+    z-index: 3;
 }
 
 main section .clock .sec {
@@ -118,9 +118,9 @@ main section .clock .sec {
     width: 2.8%;
     height: 100%;
     position: absolute;
-    left: 48.55%;
+    left: 48.9%;
     top: 0;
-    z-index: 3;
+    z-index: 4;
 }
 
 #root {
