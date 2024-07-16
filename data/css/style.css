@@ -61,7 +61,6 @@ main section .clock {
     background-position: center;
     width: min(100%, 35rem);
     height: min(100%, 35rem);
-    border: .1rem solid rgb(241, 241, 241);
     border-radius: 40rem;
     position: relative;
     transform: rotate(-1deg);
@@ -70,7 +69,7 @@ main section .clock {
 
 main section .clock .date {
     background-color: rgba(25, 25, 25, 0.4);
-    color: #f1f1f1;
+    color: rgba(241, 241, 241, 0.6);
     width: calc(12% - 0.4rem);
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 300%;
@@ -89,8 +88,8 @@ main section .clock .hour {
     background-image: url('../img/bg_clock_h.png');
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center 27%;
-    width: 3.6%;
+    background-position: center 28%;
+    width: 3%;
     height: 100%;
     position: absolute;
     left: 48.2%;
@@ -102,8 +101,8 @@ main section .clock .min {
     background-image: url('../img/bg_clock_m.png');
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center 11%;
-    width: 3.6%;
+    background-position: center 12.5%;
+    width: 2.8%;
     height: 100%;
     position: absolute;
     left: 48.2%;
@@ -115,8 +114,8 @@ main section .clock .sec {
     background-image: url('../img/bg_clock_s.png');
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: 2% 10%;
-    width: 3%;
+    background-position: 2% 13.5%;
+    width: 2.8%;
     height: 100%;
     position: absolute;
     left: 48.55%;
