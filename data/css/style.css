@@ -85,36 +85,36 @@ main section .clock .date {
 }
 
 main section .clock .hour {
-    background-image: url('../img/bg_clock_h.png');
+    background: url('../img/bg_clock_h.png');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center 28%;
     width: 3%;
     height: 100%;
     position: absolute;
-    left: 48.2%;
+    left: 48.8%;
     top: 0;
     z-index: 1;
 }
 
 main section .clock .min {
-    background-image: url('../img/bg_clock_m.png');
+    background: url('../img/bg_clock_m.png');
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center 12.5%;
+    background-position: center 13%;
     width: 2.8%;
     height: 100%;
     position: absolute;
-    left: 48.2%;
+    left: 48.8%;
     top: 0;
     z-index: 2;
 }
 
 main section .clock .sec {
-    background-image: url('../img/bg_clock_s.png');
+    background: url('../img/bg_clock_s.png');
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: 2% 13.5%;
+    background-position: 5% 13.5%;
     width: 2.8%;
     height: 100%;
     position: absolute;
