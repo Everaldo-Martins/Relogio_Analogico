@@ -55,13 +55,13 @@ main section {
 }
 
 main section .clock {
-    background: rgba(20, 20, 20, 0.6) url('../img/bg_clock.png');
+    background: rgba(20, 20, 20, 0.4) url('../img/bg_clock.png');
     background-repeat: no-repeat;
     background-size: 97%;
     background-position: center;
     width: min(100%, 35rem);
     height: min(100%, 35rem);
-    border: .1rem solid #f1f1f1;
+    border: .1rem solid rgb(241, 241, 241);
     border-radius: 40rem;
     position: relative;
     transform: rotate(-1deg);
