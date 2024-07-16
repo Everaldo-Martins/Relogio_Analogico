@@ -6,7 +6,7 @@ Revitalização do projeto de férias, criado utilizando HTML, CSS, Javascript. 
 
 ## Acesse o projeto
 
-- [Relógio Analógico](https://everaldo-martins.github.io/Relogio_Analogico)
+- [Relógio Analógico](https://everaldo-martins.github.io/relogio_analogico)
 
 ## Imagens
 
