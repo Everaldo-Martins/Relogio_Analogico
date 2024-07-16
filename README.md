@@ -1,11 +1,15 @@
 # Relógio Analógico HTML, CSS e Javascript.
 
-## Sobre o projeto:
-Projeto de férias, criado utilizando HTML, CSS, Javascript.
+## Sobre
 
-### Acesse o projeto em funcionamento
-- <a href="https://everaldo-martins.github.io/Relogio_Analogico/" target="_blank">Relógio Analógico</a>
+Revitalização do projeto de férias, criado utilizando HTML, CSS, Javascript. Acrescentado efeitos visuais Booble Bouncing.
 
-### Imagem do Relógio Analógico
-<img src="Screenshot_1.png" width="340px" alt="Relógio Dark"/>
-<img src="Screenshot_2.png" width="340px" alt="Relógio Light"/>
+## Acesse o projeto
+
+- [Relógio Analógico](https://everaldo-martins.github.io/Relogio_Analogico)
+
+## Imagens
+
+![Desktop](screenshots/screenshot_desktop.png)
+
+![Mobile](screenshots/screenshot_mobile.png)

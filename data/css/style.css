@@ -1,96 +1,165 @@
-@import url("./reset.css");
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 
-body{
-  font-family: 'Roboto Slab', serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 100%;
+/* Resete */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,
+canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,
+fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,
+html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,
+p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,
+tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
+    margin: 0;
+    padding:0;
+    border:none;
+    font-size:100%;
+    font:inherit;
+    vertical-align: baseline;
 }
+article,aside,details,figcaption,figure,footer,header,
+hgroup,menu,nav,section{
+    display:block;
+}
+html,body{height:100%;line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:after,blockquote:before,q:after,q:before{
+    content:'';
+    content:none;
+}
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+body {
+    background-color: rgb(83, 83, 83);
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100%;
+}
+
 main {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 main section {
-  width: min(100%, 80rem);
-  height: min(100%, 80rem);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: min(100%, 80rem);
+    height: min(100%, 80rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 main section .clock {
-  background: rgb(233, 233, 233) url('../img/bg_clock.png');
-  background-repeat: no-repeat;
-  background-size: 98%;
-  background-position: center;
-  width: min(100%, 35rem);
-  height: min(100%, 35rem);
-  border-width: .3rem;
-  border-style: solid;
-  border-color: rgb(17, 17, 17);
-  border-radius: 40rem;
-  box-shadow: inset 0px 0px 50px 5px rgba(4, 7, 10, 0.8);
-  position: relative;
-  z-index: -1;
+    background: rgba(20, 20, 20, 0.6) url('../img/bg_clock.png');
+    background-repeat: no-repeat;
+    background-size: 97%;
+    background-position: center;
+    width: min(100%, 35rem);
+    height: min(100%, 35rem);
+    border: .1rem solid #f1f1f1;
+    border-radius: 40rem;
+    position: relative;
+    transform: rotate(-1deg);
+    z-index: -1;
 }
-main section .clock .date{
-  background-color: rgb(240, 240, 240);
-  color: #1f1f1f;
-  width: calc(12% - 0.4rem);
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 300%;
-  line-height: 1;
-  font-weight: 600;
-  padding:  0.1rem;
-  text-align: center;
-  border-width: .2rem;
-  border-style: solid;
-  border-color: rgb(17, 17, 17);
-  border-radius: .5rem;
-  position: absolute;
-  left: calc(44% - 0.1rem);
-  bottom: 25%;
-  z-index: 0;
+
+main section .clock .date {
+    background-color: rgba(25, 25, 25, 0.4);
+    color: #f1f1f1;
+    width: calc(12% - 0.4rem);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 300%;
+    line-height: 1;
+    font-weight: 600;
+    padding: 0.1rem;
+    text-align: center;
+    border-radius: .5rem;
+    position: absolute;
+    right: calc(25% - 0.1rem);
+    top: calc(46% - 0.4rem);
+    z-index: 0;
 }
+
 main section .clock .hour {
-  background-image: url('../img/bg_clock_h.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center 27%;
-  width: 3.6%;
-  height: 100%;
-  position: absolute;
-  left: 48.2%;
-  top: 0;
-  z-index: 1;
+    background-image: url('../img/bg_clock_h.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center 27%;
+    width: 3.6%;
+    height: 100%;
+    position: absolute;
+    left: 48.2%;
+    top: 0;
+    z-index: 1;
 }
-main section .clock .min { 
-  background-image: url('../img/bg_clock_m.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center 11%;
-  width: 3.6%;
-  height: 100%;
-  position: absolute;
-  left: 48.2%;
-  top: 0;
-  z-index: 2;
+
+main section .clock .min {
+    background-image: url('../img/bg_clock_m.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center 11%;
+    width: 3.6%;
+    height: 100%;
+    position: absolute;
+    left: 48.2%;
+    top: 0;
+    z-index: 2;
 }
+
 main section .clock .sec {
-  background-image: url('../img/bg_clock_s.png');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 2% 10%;
-  width: 3%;
-  height: 100%;
-  position: absolute;
-  left: 48.55%;
-  top: 0;
-  z-index: 3;
+    background-image: url('../img/bg_clock_s.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 2% 10%;
+    width: 3%;
+    height: 100%;
+    position: absolute;
+    left: 48.55%;
+    top: 0;
+    z-index: 3;
 }
+
+#root {
+    position: fixed;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bouncing-blob {
+    width: 33vw;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    will-change: transform;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    transform-origin: left top;
+    filter: blur(3rem);
+    transition: all .5s;
+}
+
+.bouncing-blob--blue {
+    background: #0062ffcc;
+}
+
+.bouncing-blob--purple {
+    background: #8400ffcc;
+}
+
+.bouncing-blob--pink {
+    background: #ff00cccc;
+}
+
+/*
 @media (prefers-color-scheme: light) {
   body{
       background-color: rgb(194, 224, 245);
@@ -107,16 +176,19 @@ main section .clock .sec {
     background-color: rgb(86, 95, 100);
   }
 }
+*/
 @media (max-width: 1024px) {
-  main section {
-    width: max(100%, 23.75rem);
-    height: max(100%, 23.75rem);
-  }
-  main section .clock {
-    width:  23.75rem; 
-    height: 23.75rem;
-  }
-  main section .clock .date{
-    font-size: 1.57rem;
-  }
+    main section {
+        width: max(100%, 23.75rem);
+        height: max(100%, 23.75rem);
+    }
+
+    main section .clock {
+        width: 23.75rem;
+        height: 23.75rem;
+    }
+
+    main section .clock .date {
+        font-size: 1.57rem;
+    }
 }
