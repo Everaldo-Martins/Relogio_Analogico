@@ -75,7 +75,7 @@ main section .clock .date {
     font-size: 300%;
     line-height: 1;
     font-weight: 600;
-    padding: 0.1rem;
+    padding: 0.2rem;
     text-align: center;
     border-radius: .5rem;
     position: absolute;
@@ -188,6 +188,7 @@ main section .clock .sec {
     }
 
     main section .clock .date {
+        top: calc(48% - 0.4rem);
         font-size: 1.57rem;
     }
 }
