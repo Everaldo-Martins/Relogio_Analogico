@@ -191,4 +191,8 @@ main section .clock .sec {
         top: calc(48% - 0.4rem);
         font-size: 1.57rem;
     }
+
+    .bouncing-blob {
+        width: 33vh;
+    }
 }
